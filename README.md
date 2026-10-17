@@ -1,1 +1,2 @@
-# Pagina-Restaurante-Estatico
+# Restaurante Estático
+Página de restaurante estático diseñada con figma y implementada con el concepto de un restaurante de comida gallega inventado donde se diseño el logo, la paleta de colores, la tipografia, el nombre ...
