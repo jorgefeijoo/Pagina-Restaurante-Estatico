@@ -1,0 +1,107 @@
+.story-section {
+  padding: 4.8rem 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.story-content p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-bottom: 1.1rem;
+}
+
+.story-signature {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.sig-line-1 {
+  display: block;
+  font-size: 2rem;
+}
+
+.sig-line-2 {
+  display: block;
+  font-size: 3.1rem;
+}
+
+.story-image-wrapper {
+  aspect-ratio: 4 / 4.6;
+}
+
+.pillars-section {
+  background-color: var(--bg-sage);
+  padding: 4.5rem 0;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.pillar-img {
+  aspect-ratio: 4 / 3.2;
+  margin-bottom: 1.1rem;
+}
+
+.pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.pillar-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.team-section {
+  padding: 4.5rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.team-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.team-names {
+  font-size: 0.84rem;
+  color: var(--text-main);
+  margin-bottom: 0.85rem;
+}
+
+.team-Sidequote {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-style: normal;
+  border-left: 2px solid var(--accent-burgundy);
+  padding-left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .story-grid,
+  .pillars-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+}

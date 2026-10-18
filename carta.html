@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carta · O forno do peregriño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/carta.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body id="top">
+
+  <!-- CABECERA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="O forno do peregriño - Inicio">
+        <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+        <span class="brand-divider"></span>
+        <span class="brand-name">O forno do peregriño</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle active" aria-expanded="false">
+              Carta
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="carta.html" class="active">La carta</a></li>
+              <li><a href="vinos.html">Carta de vinos</a></li>
+            </ul>
+          </li>
+          <li><a href="conocenos.html" class="nav-link">Conócenos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CABECERA DIVIDIDA -->
+    <section class="split-hero">
+      <div class="split-hero-grid">
+        <div class="split-hero-text">
+          <p class="eyebrow"><span class="eyebrow-line"></span>LA CARTA</p>
+          <h1 class="split-hero-title">Galicia,<br>a bocados.</h1>
+          <p class="split-hero-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+            encuentra en la mesa.</p>
+        </div>
+        <div class="split-hero-media">
+          <img src="img/Empanada2.png" alt="Empanada artesana gallega cortada sobre tabla de madera">
+          <p class="split-hero-caption">Masa de pan, rellenos con raíz.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONA RESERVADA PARA VÍDEO DE PRESENTACIÓN -->
+    <section class="video-showcase-section">
+      <div class="container">
+        <div class="video-showcase-box">
+          <p class="section-tag">PRESENTACIÓN EN VÍDEO</p>
+          <h2 class="video-showcase-title">Un vistazo al menú</h2>
+          <p class="video-showcase-desc">Un espacio preparado para incorporar un vídeo de presentación del menú. Aquí
+            podrás mostrar el proceso, los platos y la esencia de la carta.</p>
+          <div class="video-aspect-frame" aria-label="Espacio reservado para el vídeo de presentación del menú">
+            <video controls muted preload="metadata" poster="img/hero-empanada.jpg">
+              <source src="/img/videoPresentacionCarta.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de vídeo HTML5.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APERITIVOS -->
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-section-header">
+          <p class="section-tag">PARA EMPEZAR</p>
+          <h2 class="section-heading">Aperitivos</h2>
+          <p class="menu-section-sub">Pequeños bocados para compartir, con todo el carácter de Galicia.</p>
+        </div>
+
+        <div class="menu-items-list">
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <img src="img/Pimientos.png" alt="Ración de Pimientos de Padrón" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Ración de Pimientos de Padrón (unos pican y otros no).</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Sin datos</p>
+              <p class="menu-item-price">Precio: 7,50€</p>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <img src="img/Croquetas.png" alt="Croquetas caseras de lacón con grelos" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Croquetas caseras de lacón con grelos (6uds).</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Huevo, Lácteos</p>
+              <p class="menu-item-price">Precio: 9,00€</p>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <img src="img/TablaDeQuesos.png" alt="Tabla de quesos gallegos Tetilla y San Simón da Costa"
+                loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Tabla de quesos gallegos (Tetilla y San Simón da Costa).</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Lácteos</p>
+              <p class="menu-item-price">Precio: 12,5€</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPALES -->
+    <section class="menu-section menu-section--dark">
+      <div class="container">
+        <div class="menu-section-header">
+          <p class="section-tag section-tag--light">PRODUCTO BASE · PRINCIPAL</p>
+          <h2 class="section-heading section-heading--light">Empanada<br>artesana<br>de masa de pan</h2>
+          <p class="menu-section-sub menu-section-sub--light">Cuatro rellenos para disfrutar del sabor de nuestra casa.
+          </p>
+        </div>
+
+        <div class="menu-items-list">
+          <article class="menu-item menu-item--dark">
+            <div class="menu-item-img">
+              <img src="img/EmpanadaAtun.png" alt="Empanada clásica de bonito y pimientos" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Empanada clásica de bonito y pimientos.</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Atún</p>
+              <p class="menu-item-price">Precio: 5,50€ (ración)</p>
+            </div>
+          </article>
+
+          <article class="menu-item menu-item--dark">
+            <div class="menu-item-img">
+              <img src="img/EmpanadaZorza.png" alt="Empanada de zorza" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Empanada de zorza.</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Pescado</p>
+              <p class="menu-item-price">Precio: 5,50€ (ración)</p>
+            </div>
+          </article>
+
+          <article class="menu-item menu-item--dark">
+            <div class="menu-item-img">
+              <img src="img/EmpanadaZamburiña.png" alt="Empanada de zamburiñas con cebolla pochada" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Empanada de zamburiñas con cebolla pochada.</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Moluscos</p>
+              <p class="menu-item-price">Precio: 7,50€ (ración)</p>
+            </div>
+          </article>
+
+          <article class="menu-item menu-item--dark">
+            <div class="menu-item-img">
+              <img src="img/EmpanadaZamburiña.png" alt="Empanada de bacalao con pasas" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Empanada de bacalao con pasas.</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Pescado, Sulfitos</p>
+              <p class="menu-item-price">Precio: 6,5€ (ración)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTRES -->
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-section-header">
+          <p class="section-tag">UN FINAL PARA RECORDAR</p>
+          <h2 class="section-heading">Postres</h2>
+          <p class="menu-section-sub">Los clásicos que invitan a alargar la sobremesa.</p>
+        </div>
+
+        <div class="menu-items-list">
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <img src="img/TartaSantiago.png" alt="Tarta de Santiago tradicional" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Tarta de Santiago .</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Frutos secos, Huevo, Gluten</p>
+              <p class="menu-item-price">Precio: 4,50€</p>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <div class="menu-item-img">
+              <img src="img/TablaDeQuesos.png" alt="Filloas tradicionales rellenas" loading="lazy">
+            </div>
+            <div class="menu-item-info">
+              <h3 class="menu-item-title">Filloas tradicionales rellenas de crema/mermelada/nocilla.</h3>
+              <p class="menu-item-desc">Para compartir, para descubrir y para volver. El sabor empieza en el origen y se
+                encuentra en la mesa.</p>
+              <p class="menu-item-allergens">• ALÉRGENOS: Gluten, Lácteos, Huevos</p>
+              <p class="menu-item-price">Precio: 4,50€</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINK CARTA DE VINOS -->
+    <section class="cta-banner">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <p class="cta-eyebrow">LOS BUENOS MOMENTOS EMPIEZAN AQUÍ</p>
+          <h2 class="cta-heading">Una buena carta pide una buena copa.</h2>
+          <p class="cta-sub">Historias de viñedos que merecen acompañar la mesa.</p>
+        </div>
+        <div class="cta-banner-action">
+          <a href="vinos.html" class="btn btn--primary">
+            <span>Descubre los vinos</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-brand">
+          <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+          <span>O forno do<br>peregriño</span>
+        </a>
+        <p class="footer-tagline">o forno do peregriño · Cocina con raíces.<br>Momentos que se quedan.</p>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"
+          aria-label="Instagram de O forno do peregriño">
+          <img src="/img/logoInstagram.png" alt="logoInstagram" height="18px" width="18px">
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">DÓNDE ESTAMOS</h3>
+        <address class="footer-address">
+          Rua do Gozo , 33<br>
+          15820 · Santiago de Compostela
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">CONTACTO</h3>
+        <p><a href="tel:+34981123456" class="footer-link">981 123 456</a></p>
+        <p><a href="mailto:ofornoperegrino@gmail.com" class="footer-link">ofornoperegrino@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">HORARIOS</h3>
+        <p>Lunes a domingo</p>
+        <p>Comidas · 13:00 | 16:00</p>
+        <p>Cenas · 20:00 | 23:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-author">Jorge Feijoo Oitaven</p>
+      <ul class="footer-legal">
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <a href="#top" class="back-to-top">Volver al inicio ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

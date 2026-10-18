@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos y reservas · O forno do peregriño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body id="top">
+
+  <!-- CABECERA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="O forno do peregriño - Inicio">
+             <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+        <span class="brand-divider"></span>
+        <span class="brand-name">O forno do peregriño</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Carta
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="carta.html">La carta</a></li>
+              <li><a href="vinos.html">Carta de vinos</a></li>
+            </ul>
+          </li>
+          <li><a href="conocenos.html" class="nav-link">Conócenos</a></li>
+          <li><a href="contacto.html" class="nav-link active">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CABECERA DIVIDIDA -->
+    <section class="split-hero">
+      <div class="split-hero-grid">
+        <div class="split-hero-text">
+          <p class="eyebrow"><span class="eyebrow-line"></span>CONTÁCTANOS / RESERVAS</p>
+          <h1 class="split-hero-title">Tu próxima<br>sobremesa.</h1>
+          <p class="split-hero-desc">Cuéntanos cuándo te gustaría venir. Aquí empieza ese encuentro que tienes pendiente.</p>
+        </div>
+        <div class="split-hero-media">
+          <img src="img/ContactanosCalidad.jpg" alt="Mesa de madera preparada para recibir comensales">
+          <p class="split-hero-caption">Una mesa, una ocasión, una conversación pendiente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE RESERVA Y CONTACTO -->
+    <section class="booking-section">
+      <div class="container booking-grid">
+        <!-- Columna izquierda: información -->
+        <div class="booking-info-col">
+          <p class="section-tag">GUARDAMOS UN SITIO PARA TI</p>
+          <h2 class="section-heading">Hablemos de tu<br>próxima visita.</h2>
+          <p class="booking-lead">Elige el día, la hora y con quién compartir la mesa. Puedes añadir cualquier detalle que quieras que tengamos en cuenta.</p>
+
+          <div class="booking-info-block">
+            <h3 class="info-block-title">TAMBIÉN PUEDES CONTACTARNOS</h3>
+            <p class="info-phone"><a href="tel:+34981123456">981 123 456</a></p>
+            <p class="info-email"><a href="mailto:ofornoperegrino@gmail.com">ofornoperegriño@gmail.com</a></p>
+          </div>
+
+          <div class="booking-info-block">
+            <h3 class="info-block-title">HORARIOS</h3>
+            <p>Lunes a domingo</p>
+            <p>Comidas · 13:00 | 16:00</p>
+            <p>Cenas · 20:00 | 23:00</p>
+          </div>
+        </div>
+
+        <!-- Columna derecha: formulario -->
+        <div class="booking-form-card">
+          <h2 class="form-card-title">Solicita tu reserva</h2>
+          <p class="form-card-required">Los campos con * son obligatorios.</p>
+          <p class="form-validation-summary" id="form-summary-error" hidden>Revisa los campos marcados. La solicitud no se envió.</p>
+          <p class="form-validation-success" id="form-summary-success" hidden>¡Solicitud recibida! Te confirmaremos tu reserva muy pronto.</p>
+
+          <form id="reservation-form" novalidate>
+            <!-- Nombre y apellidos -->
+            <div class="form-group">
+              <label for="nombre">Nombre y apellidos *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellidos" required>
+              <span class="field-error" id="error-nombre" hidden>Error: Escribe tu nombre y apellidos.</span>
+            </div>
+
+            <!-- Email y Teléfono -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <span class="field-error" id="error-email" hidden>Error: Introduce un email válido, como nombre@dominio.com.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                <span class="field-error" id="error-telefono" hidden>Error: Introduce un número de teléfono válido.</span>
+              </div>
+            </div>
+
+            <!-- Fecha y Hora -->
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="fecha">Fecha *</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <span class="field-error" id="error-fecha" hidden>Error: La fecha ya ha pasado. Elige hoy o una fecha futura.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="hora">Hora *</label>
+                <select id="hora" name="hora" required>
+                  <option value="">Selecciona una hora</option>
+                  <optgroup label="Comidas (13:00 - 16:00)">
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                  </optgroup>
+                  <optgroup label="Cenas (20:00 - 23:00)">
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                    <option value="22:30">22:30</option>
+                  </optgroup>
+                </select>
+                <span class="field-error" id="error-hora" hidden>Error: Elige entre 13:00 y 16:00 o entre 20:00 y 23:00.</span>
+              </div>
+            </div>
+
+            <!-- Número de personas -->
+            <div class="form-group">
+              <label for="personas">Número de personas *</label>
+              <select id="personas" name="personas" required>
+                <option value="">Selecciona el número de comensales</option>
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6 personas</option>
+                <option value="7">7 personas</option>
+                <option value="8">8 o más personas</option>
+              </select>
+              <span class="field-error" id="error-personas" hidden>Error: Selecciona el número de personas para la reserva.</span>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-group">
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos los detalles de tu visita..."></textarea>
+            </div>
+
+            <!-- Política de privacidad -->
+            <div class="form-group form-group--checkbox">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <span>He leído y acepto la <a href="#">política de privacidad</a>. *</span>
+              </label>
+              <span class="field-error" id="error-privacidad" hidden>Error: Debes aceptar la política de privacidad para enviar la solicitud.</span>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn--primary">
+                <span>Solicitar reserva</span>
+                <svg class="btn-arrow" width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </button>
+              <p class="form-pending-note" id="form-pending-note" hidden>Si envías una solicitud válida, quedará pendiente de confirmación por el restaurante.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÓNDE ENCONTRARNOS / MAPA -->
+    <section class="map-section">
+      <div class="container">
+        <p class="section-tag">DÓNDE ENCONTRARNOS</p>
+        <h2 class="section-heading">El camino a nuestra mesa.</h2>
+
+        <div class="map-grid">
+          <div class="map-frame-wrapper">
+            <img src="img/Localizacion.png" alt="Mapa de ubicación en Rua do Gozo, 33, Santiago de Compostela" class="map-static-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <iframe
+              class="map-iframe-fallback"
+              style="display:none;"
+              title="Ubicación O forno do peregriño en Rua do Gozo 33, Santiago de Compostela"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-8.5085%2C42.8855%2C-8.4985%2C42.8905&amp;layer=mapnik&amp;marker=42.8880%2C-8.5035"
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="map-address-box">
+            <h3 class="map-side-title">Ven a conocernos.</h3>
+            <p class="map-street">Rua do Gozo , 33</p>
+            <p class="map-city">15820 · Santiago de Compostela</p>
+            <div class="map-divider"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-brand">
+                <img src="/img/logo.png" alt="logo" width="84" height="68">
+          <span>O forno do<br>peregriño</span>
+        </a>
+        <p class="footer-tagline">o forno do peregriño · Cocina con raíces.<br>Momentos que se quedan.</p>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram de O forno do peregriño">
+                <img src="/img/logoInstagram.png" alt="logoInstagram" height="18px" width="18px">
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">DÓNDE ESTAMOS</h3>
+        <address class="footer-address">
+          Rua do Gozo , 33<br>
+          15820 · Santiago de Compostela
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">CONTACTO</h3>
+        <p><a href="tel:+34981123456" class="footer-link">981 123 456</a></p>
+        <p><a href="mailto:ofornoperegrino@gmail.com" class="footer-link">ofornoperegrino@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">HORARIOS</h3>
+        <p>Lunes a domingo</p>
+        <p>Comidas · 13:00 | 16:00</p>
+        <p>Cenas · 20:00 | 23:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-author">Jorge Feijoo Oitaven</p>
+      <ul class="footer-legal">
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <a href="#top" class="back-to-top">Volver al inicio ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

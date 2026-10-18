@@ -1,0 +1,107 @@
+.wine-subnav-bar {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1.1rem 0;
+}
+
+.wine-subnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wine-subnav-inner .section-tag {
+  margin-bottom: 0;
+}
+
+.wine-anchor-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.wine-anchor-links a:hover {
+  color: var(--accent-burgundy);
+}
+
+.wine-category-section {
+  padding: 4.2rem 0;
+}
+
+.wine-category-section--tinted {
+  background-color: var(--bg-sage);
+}
+
+.wine-category-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+.wine-cat-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.wine-cat-region {
+  font-size: 0.78rem;
+  color: var(--accent-burgundy);
+  margin-bottom: 0.75rem;
+}
+
+.wine-cat-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 1.4rem;
+}
+
+.wine-cat-image {
+  aspect-ratio: 4 / 3;
+}
+
+.wine-list {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.wine-entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.wine-name {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.wine-varieties {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-bottom: 0.45rem;
+}
+
+.wine-pricing {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-burgundy);
+}
+
+.wine-pricing span {
+  color: var(--border-subtle);
+  margin: 0 0.35rem;
+}
+
+
+@media (max-width: 992px) {
+  .wine-category-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

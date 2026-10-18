@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O forno do peregriño · Cocina con raíces en Santiago de Compostela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/inicio.css">
+
+</head>
+<body id="top">
+
+  <!-- CABECERA -->
+  <header class="site-header site-header--hero">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="O forno do peregriño - Inicio">
+       <img src="/img/logo.png" alt="logo" width="84" height="68">
+        <span class="brand-divider"></span>
+        <span class="brand-name brand-name--uppercase">O FORNO DO PEREGRIÑO</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Carta
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="carta.html">La carta</a></li>
+              <li><a href="vinos.html">Carta de vinos</a></li>
+            </ul>
+          </li>
+          <li><a href="conocenos.html" class="nav-link">Conócenos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CARRUSEL PRINCIPAL (HERO) -->
+    <section class="hero-carousel" aria-label="Presentación del restaurante">
+      <div class="carousel-slides">
+        <!-- Diapositiva 1 -->
+        <div class="carousel-slide active" style="background-image: url('img/Empanada2.png');">
+          <div class="carousel-overlay"></div>
+        </div>
+        <!-- Diapositiva 2 -->
+        <div class="carousel-slide" style="background-image: url('img/EmpanadaCarrusel2Calidad.jpg');">
+          <div class="carousel-overlay"></div>
+        </div>
+        <!-- Diapositiva 3 -->
+        <div class="carousel-slide" style="background-image: url('img/EmpanadaCarrusel3Calidad.jpg');">
+          <div class="carousel-overlay"></div>
+        </div>
+      </div>
+
+      <div class="container hero-content-wrapper">
+        <div class="hero-text-box">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow-line"></span>COCINA CON RAÍCES</p>
+          <h1 class="hero-title">El placer de<br>quedarse.</h1>
+          <p class="hero-subtitle">Sabores de temporada, una copa de vino y todo el tiempo del mundo.</p>
+          <a href="carta.html" class="btn btn--primary">
+            <span>Descubre la carta</span>
+            <svg class="btn-arrow" width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="carousel-controls-bar">
+          <div class="carousel-status">
+            <span class="carousel-counter" id="carousel-counter">01 / 03</span>
+            <div class="carousel-indicators" role="tablist" aria-label="Seleccionar imagen">
+              <button class="indicator active" data-slide="0" aria-label="Diapositiva 1"></button>
+              <button class="indicator" data-slide="1" aria-label="Diapositiva 2"></button>
+              <button class="indicator" data-slide="2" aria-label="Diapositiva 3"></button>
+            </div>
+            <span class="carousel-caption" id="carousel-caption">La esencia de nuestra cocina</span>
+          </div>
+          <div class="carousel-arrows">
+            <button class="carousel-arrow" id="prev-slide" aria-label="Imagen anterior">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7.5 3.5M3 8L7.5 12.5" stroke="currentColor" stroke-width="1.3"/></svg>
+            </button>
+            <button class="carousel-arrow" id="next-slide" aria-label="Siguiente imagen">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIENVENIDA -->
+    <section class="section-welcome">
+      <div class="container welcome-grid">
+        <div class="welcome-seal-wrapper">
+          <div class="welcome-seal">
+                <img src="/img/logoNegro.png" alt="logo" width="84" height="68">
+
+            <span class="seal-title">O forno do<br>peregriño</span>
+            <span class="seal-sub">RESTAURANTE</span>
+          </div>
+        </div>
+        <div class="welcome-text">
+          <p class="section-tag">BIENVENIDOS A NUESTRA MESA</p>
+          <h2 class="section-heading">Lo sencillo, cuando se<br>hace con alma.</h2>
+          <p class="section-lead">Creemos en una cocina que respeta el origen y celebra cada estación. En las mesas que reúnen, las conversaciones que se alargan y los pequeños detalles que invitan a volver.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUATRO FORMAS DE ENCONTRARNOS -->
+    <section class="section-discover">
+      <div class="container">
+        <div class="discover-header">
+          <h2 class="section-heading">Cuatro formas de encontrarnos.</h2>
+          <span class="discover-meta">EL UNIVERSO O forno do peregriño</span>
+        </div>
+
+        <div class="discover-grid">
+          <a href="carta.html" class="discover-card">
+            <div class="card-image-wrapper">
+              <span class="card-badge">01</span>
+              <img src="img/Empanada1.png" alt="Empanada artesana recién horneada servida en plato de cerámica" loading="lazy">
+            </div>
+            <h3 class="card-title">La carta</h3>
+            <p class="card-desc">El sabor de cada estación, del origen a tu mesa.</p>
+          </a>
+
+          <a href="conocenos.html" class="discover-card">
+            <div class="card-image-wrapper">
+              <span class="card-badge">02</span>
+              <img src="img/Ambiente.png" alt="Salón interior de piedra con clientes cenando en O forno do peregriño" loading="lazy">
+            </div>
+            <h3 class="card-title">Conócenos</h3>
+            <p class="card-desc">Nuestra esencia está en los pequeños detalles.</p>
+          </a>
+
+          <a href="vinos.html" class="discover-card">
+            <div class="card-image-wrapper">
+              <span class="card-badge">03</span>
+              <img src="img/Vinos.png" alt="Botella y copa de vino tinto sobre mesa de madera" loading="lazy">
+            </div>
+            <h3 class="card-title">Carta de vinos</h3>
+            <p class="card-desc">Historias de viñedos que merecen una buena copa.</p>
+          </a>
+
+          <a href="contacto.html" class="discover-card">
+            <div class="card-image-wrapper">
+              <span class="card-badge">04</span>
+              <img src="img/Detalles.png" alt="Mesa preparada con servilleta de lino y rama de romero" loading="lazy">
+            </div>
+            <h3 class="card-title">Contáctanos</h3>
+            <p class="card-desc">Una mesa, una ocasión, una conversación pendiente.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER CTA INFERIOR -->
+    <section class="cta-banner">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <p class="cta-eyebrow">LOS BUENOS MOMENTOS EMPIEZAN AQUÍ</p>
+          <h2 class="cta-heading">Guardamos un sitio para ti.</h2>
+          <p class="cta-sub">Escríbenos para tu próxima visita. Estaremos encantados de recibirte.</p>
+        </div>
+        <div class="cta-banner-action">
+          <a href="contacto.html" class="btn btn--primary">
+            <span>Contáctanos</span>
+            <svg class="btn-arrow" width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-brand">
+                <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+          <span>O forno do<br>peregriño</span>
+        </a>
+        <p class="footer-tagline">o forno do peregriño · Cocina con raíces.<br>Momentos que se quedan.</p>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram de O forno do peregriño">
+                <img src="/img/logoInstagram.png" alt="logoInstagram" height="18px" width="18px">
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">DÓNDE ESTAMOS</h3>
+        <address class="footer-address">
+          Rua do Gozo , 33<br>
+          15820 · Santiago de Compostela
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">CONTACTO</h3>
+        <p><a href="tel:+34981123456" class="footer-link">981 123 456</a></p>
+        <p><a href="mailto:ofornoperegrino@gmail.com" class="footer-link">ofornoperegrino@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">HORARIOS</h3>
+        <p>De lunes a Domingo</p>
+        <p>Comidas · 13:00 | 16:00</p>
+        <p>Cenas · 20:00 | 23:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-author">Jorge Feijoo Oitaven</p>
+      <ul class="footer-legal">
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <a href="#top" class="back-to-top">Volver al inicio ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de vinos · O forno do peregriño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/vinos.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body id="top">
+
+  <!-- CABECERA -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="O forno do peregriño - Inicio">
+        <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+        <span class="brand-divider"></span>
+        <span class="brand-name">O forno do peregriño</span>
+      </a>
+
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link dropdown-toggle active" aria-expanded="false">
+              Carta
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="carta.html">La carta</a></li>
+              <li><a href="vinos.html" class="active">Carta de vinos</a></li>
+            </ul>
+          </li>
+          <li><a href="conocenos.html" class="nav-link">Conócenos</a></li>
+          <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CABECERA DIVIDIDA -->
+    <section class="split-hero">
+      <div class="split-hero-grid">
+        <div class="split-hero-text">
+          <p class="eyebrow"><span class="eyebrow-line"></span>CARTA DE VINOS</p>
+          <h1 class="split-hero-title">El origen,<br>en una copa.</h1>
+          <p class="split-hero-desc">Blancos de Galicia, tintos con carácter y espumosos para acompañar el momento. Una
+            selección para disfrutar sin prisa.</p>
+        </div>
+        <div class="split-hero-media">
+          <img src="img/Vinos.png" alt="Botella de vino y copa de tinto sobre mesa de madera">
+          <p class="split-hero-caption">El vino y el tiempo, buenos compañeros de mesa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBNAVEGACIÓN DE CATEGORÍAS -->
+    <div class="wine-subnav-bar">
+      <div class="container wine-subnav-inner">
+        <span class="section-tag">NUESTRA SELECCIÓN</span>
+        <ul class="wine-anchor-links">
+          <li><a href="#tintos">Tintos · Clásicos Nacionales</a></li>
+          <li><a href="#espumosos">Espumosos</a></li>
+          <li><a href="#blancos">Blancos · Galicia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VINOS TINTOS -->
+    <section id="tintos" class="wine-category-section">
+      <div class="container wine-category-grid">
+        <div class="wine-category-sidebar">
+          <h2 class="wine-cat-title">Vinos tintos</h2>
+          <p class="wine-cat-region">(Clásicos Nacionales)</p>
+          <p class="wine-cat-desc">Para quienes prefieren perfiles más estructurados y con crianza en madera.</p>
+          <div class="wine-cat-image interactive-img">
+            <img src="img/Vinos.png" alt="Copa de vino tinto con cuerpo" loading="lazy">
+          </div>
+        </div>
+
+        <div class="wine-list">
+          <article class="wine-entry">
+            <h3 class="wine-name">Muga Crianza (D.O.Ca. Rioja)</h3>
+            <p class="wine-varieties">Variedades: Tempranillo, Garnacha</p>
+            <p class="wine-pricing">Copa: 3,50 € <span>|</span> Botella: 27,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Pago de los Capellanes (D.O. Ribera del Duero)</h3>
+            <p class="wine-varieties">Variedades: 100% Tinto Fino</p>
+            <p class="wine-pricing">Copa: 6,00 € <span>|</span> Botella: 37,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Marqués de Murrieta Reserva (D.O.Ca. Rioja)</h3>
+            <p class="wine-varieties">Variedades: Tempranillo</p>
+            <p class="wine-pricing">Botella: 35,00 €</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPUMOSOS -->
+    <section id="espumosos" class="wine-category-section wine-category-section--tinted">
+      <div class="container wine-category-grid">
+        <div class="wine-category-sidebar">
+          <h2 class="wine-cat-title">Espumosos</h2>
+          <p class="wine-cat-desc">El contraste ideal para limpiar el paladar tras los intensos sabores del horno de
+            leña.</p>
+          <div class="wine-cat-image interactive-img">
+            <img src="img/VinoEspumoso.png" alt="Dos copas de vino espumoso brindando en la mesa" loading="lazy">
+          </div>
+        </div>
+
+        <div class="wine-list">
+          <article class="wine-entry">
+            <h3 class="wine-name">Mar de Frades Brut Nature (D.O. Rías Baixas)</h3>
+            <p class="wine-varieties">Estilo: Espumoso de Albariño</p>
+            <p class="wine-pricing">Copa: 6,00 € <span>|</span> Botella: 30,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Gramona Imperial (Corpinnat)</h3>
+            <p class="wine-varieties">Estilo: Macabeo, Xarel·lo</p>
+            <p class="wine-pricing">Botella: 38,00 €</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VINOS BLANCOS -->
+    <section id="blancos" class="wine-category-section">
+      <div class="container wine-category-grid">
+        <div class="wine-category-sidebar">
+          <h2 class="wine-cat-title">Vinos blancos</h2>
+          <p class="wine-cat-region">(Galicia)</p>
+          <p class="wine-cat-desc">Nuestra especialidad. Ideales para acompañar empanadas de marisco, pescado y verduras
+            por su inconfundible acidez y frescura atlántica.</p>
+          <div class="wine-cat-image interactive-img">
+            <img src="img/VinoBlanco.png" alt="Botella y copa de vino blanco gallego frente a viñedos en bancales"
+              loading="lazy">
+          </div>
+        </div>
+
+        <div class="wine-list">
+          <article class="wine-entry">
+            <h3 class="wine-name">Terras Gauda (D.O. Rías Baixas)</h3>
+            <p class="wine-varieties">Variedades: Albariño, Caíño, Loureiro</p>
+            <p class="wine-pricing">Copa: 4,50 € <span>|</span> Botella: 24,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Pazo Señorans (D.O. Rías Baixas)</h3>
+            <p class="wine-varieties">Variedades: 100% Albariño</p>
+            <p class="wine-pricing">Copa: 5,00 € <span>|</span> Botella: 26,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Godeval Cepas Vellas (D.O. Valdeorras)</h3>
+            <p class="wine-varieties">Variedades: 100% Godello</p>
+            <p class="wine-pricing">Copa: 5,50 € <span>|</span> Botella: 28,00 €</p>
+          </article>
+
+          <article class="wine-entry">
+            <h3 class="wine-name">Viña Mein (D.O. Ribeiro)</h3>
+            <p class="wine-varieties">Variedades: Treixadura, Godello, Loureira</p>
+            <p class="wine-pricing">Copa: 4,50 € <span>|</span> Botella: 25,00 €</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER CTA INFERIOR -->
+    <section class="cta-banner">
+      <div class="container cta-banner-inner">
+        <div class="cta-banner-text">
+          <p class="cta-eyebrow">LOS BUENOS MOMENTOS EMPIEZAN AQUÍ</p>
+          <h2 class="cta-heading">Del viñedo al horno.</h2>
+          <p class="cta-sub">Encuentra el plato con el que compartir tu próxima copa.</p>
+        </div>
+        <div class="cta-banner-action">
+          <a href="carta.html" class="btn btn--primary">
+            <span>Explorar la carta</span>
+            <svg class="btn-arrow" width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 11L11 3M11 3H4.5M11 3V9.5" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-brand">
+          <img src="/img/logo.png" alt="logo" width="84" height="68">
+
+          <span>O forno do<br>peregriño</span>
+        </a>
+        <p class="footer-tagline">o forno do peregriño · Cocina con raíces.<br>Momentos que se quedan.</p>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social"
+          aria-label="Instagram de O forno do peregriño">
+                <img src="/img/logoInstagram.png" alt="logoInstagram" height="18px" width="18px">
+
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">DÓNDE ESTAMOS</h3>
+        <address class="footer-address">
+          Rua do Gozo , 33<br>
+          15820 · Santiago de Compostela
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">CONTACTO</h3>
+        <p><a href="tel:+34981123456" class="footer-link">981 123 456</a></p>
+        <p><a href="mailto:ofornoperegrino@gmail.com" class="footer-link">ofornoperegrino@gmail.com</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col-title">HORARIOS</h3>
+        <p>Lunes a domingo</p>
+        <p>Comidas · 13:00 | 16:00</p>
+        <p>Cenas · 20:00 | 23:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-author">Jorge Feijoo Oitaven</p>
+      <ul class="footer-legal">
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <a href="#top" class="back-to-top">Volver al inicio ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
